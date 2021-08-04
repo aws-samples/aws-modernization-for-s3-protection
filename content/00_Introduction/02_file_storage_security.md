@@ -18,6 +18,9 @@ There are two main ways to use File Storage Security in your AWS Infrastructure:
 
 - <b>Automated Workflow</b> -> Development teams leverage event-driven designs with Amazon S3 to automate the processing of data uploaded to a bucket. File Storage Security was designed with this architecture in mind allowing development teams to seamlessly integrate file scanning into their automated workflow.
 
+- <b>S3 bucket Full Scan or Scheduled Scan</b> -> Helps security teams to scan all the objects inside AWS S3 buckets against malicious contents.
+[GitHub link for Plugin](https://github.com/trendmicro/cloudone-filestorage-plugins/tree/master/scan-triggers/aws-python-bucket-full-and-scheduled-scan)
+
 ### Architecture
 
 
@@ -41,6 +44,16 @@ Digging a little deeper into the architecture details, the overall deployment is
 
 {{% notice info %}}
 <p style='text-align: left;'>
-In order to launch both stacks, you must leverage the following CloudFormation Templates: <b>FSSScanner-Stack.template</b> and <b>FSS-Storage-Stack.template</b>. We also offer an all-in-one stack that launches both, called <b>FSS-All-In-One.template</b>. To help security and DevOps teams automate their workflows with File Storage Security, all CloudFormation Templates are available in our <a href="https://github.com/trendmicro/cloudone-filestorage-cloudformation-templates/tree/master/templates">GitHub</a> repository. For additional plugins, we have created a separate <a href="https://github.com/trendmicro/cloudone-filestorage-plugins/tree/master/post-scan-actions">GitHub</a> repository to enable you to add more functionality, including post-scan actions to permit files to either be pass or be quarantined.
+In order to launch both stacks, you must leverage the following CloudFormation Templates: <b>FSSScanner-Stack.template</b> and <b>FSS-Storage-Stack.template</b>. We also offer an all-in-one stack that launches both, called <b>FSS-All-In-One.template</b>. To help security and DevOps teams automate their workflows with File Storage Security, all CloudFormation Templates are available in our <a href="https://github.com/trendmicro/cloudone-filestorage-deployment-templates/tree/master/aws">GitHub</a> repository. For additional plugins, we have created a separate <a href="https://github.com/trendmicro/cloudone-filestorage-plugins/tree/master/post-scan-actions">GitHub</a> repository to enable you to add more functionality, including post-scan actions to permit files to either be pass or be quarantined.
 </p>
 {{% /notice %}}
+
+---
+
+### File Scanning Informatiuon
+
+The file hashe is sent to Trend Micro Global Smart Scan Server when a file scan occurs and enables File Storage Security to identifies malicious file hashes.
+
+In the smart scan solution, clients send file hashes determined by Trend Micro technology to Smart Scan Servers. **Cloud One - File Storage Security never send the entire file** and the risk of the file is determined using the file hashes.
+
+[Trend Micro Cloud One™ - File Storage Security Data Collection Notice](https://success.trendmicro.com/solution/000258113)

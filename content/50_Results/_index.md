@@ -7,7 +7,7 @@ pre: "<b>6. </b>"
 
 # Conclusions and Results
 
-In this workshop, you learned how you can add data security to your applications using Trend Micro Cloud One – File Storage Security in the AWS cloud, by protects the workflow through innovative techniques, such as malware scanning, integration into your custom workflows, and providing easy deployment using AWS CloudFormation template using a architecture 100% serverless – freeing you to go further and do more. 
+In this workshop, you learned how you can add data security to your applications using Trend Micro Cloud One – File Storage Security in the AWS cloud, by protecting the workflow through innovative techniques, such as malware scanning, integration into your custom workflows, and providing easy deployment using AWS CloudFormation template using a architecture 100% serverless – freeing you to go further and do more. 
 
 <img src="/images/dogs.gif"></img>
 
