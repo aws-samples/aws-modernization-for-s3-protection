@@ -18,7 +18,7 @@ Click on "Deploy" and select ```Scanner Stack and Storage Stack```, to deploy th
 
 ![Diagram](/images/fss-deploy-stacks-select.png)
 
-Select the AWS region that best suit for you and click on ```Launch Stack```, this will redirect you to your AWS account in the region that you choose to deploy the stack. Make sure that you're logged in and has the correct permissions, you can check the details of the permissions required in the Requirements section.
+Select the AWS region that best suit for you ([AWS regions supported by Cloud One - File Storage Security](/10_requirements.html)) and click on ```Launch Stack```, this will redirect you to your AWS account in the region that you choose to deploy the stack. Make sure that you're logged in and has the correct permissions, you can check the details of the permissions required in the Requirements section.
 
 You can validate the Cloud Formation Template by clicking in ```Review Stack```, to make it easier, you can also verify the Cloud Formation Template by clicking the buttons below:
 
