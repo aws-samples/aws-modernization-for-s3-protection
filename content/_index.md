@@ -47,6 +47,30 @@ The learning objectives of this workshop is to familiarize users with the deploy
 - GRC teams
 - Tech leads and Program Managers (PM)
 
+---
+
+### Additional Help
+For any additional help please reach out to: 
+
+- Fernando Cardoso - (fernando_cardoso@trendmicro.com)
+- Felipe Costa - (felipe_costa@trendmicro.com)
+
+<p>
+<a  href="mailto:fernando_cardoso@trendmicro.com;felipe_costa@trendmicro.com?subject=Feedback AWS S3 bucket malware scanning with Trend Micro Workshop"  target="_blank" rel="noopener noreferrer"  class="btn btn-default">  
+  Talk to us
+  <i class="fas fa-paper-plane"></i>
+</a>
+
+<a  href="https://github.com/aws-samples/aws-modernization-for-s3-protection/issues/new" target="_blank" rel="noopener noreferrer"  class="btn btn-default">  
+  <i class="fas fa-bug"></i>
+  Report an issue or feature request
+</a>
+</p>
+</li>
+</ul>
+<p>Built with <i class="far fa-heart" style="color: red;"></i> by Trend Micro team</p>
+
+
 --------
 
 Before we dive in, let’s go through a refresher on the core concepts explored in this workshop :point_up:
