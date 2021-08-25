@@ -9,6 +9,7 @@ Trend Micro Cloud One, a security services platform for organizations building i
 
 ![Diagram](/images/cloudone.png)
 
+----
 
 ### Benefits
 
@@ -18,6 +19,7 @@ Trend Micro Cloud One, a security services platform for organizations building i
 
 - <b>All-in-One Solution</b>: One platform that has the breadth, depth, and innovation required to meet and manage your cloud security needs today, and in the future.
 
+----
 
 ### How Does Cloud One Help?
 
@@ -31,9 +33,9 @@ We recognize that there are different drivers behind your constantly evolving cl
 
 - <b>Cloud Operational Excellence</b>: Organization are adopting a cloud center of excellence model, with the goal of creating repeatable, consistent, secure, and compliant infrastructures that can be leveraged throughout the organization. Trend Micro Cloud one is optimized to be cloud efficient and will help you meet governance, compliance, and assurance requirements quickly.
 
-<video width="800" height="600"  autoplay controls>
-<source src="/images/cloudone.mp4" type="video/mp4">
-</video>
+{{< youtube id="0Llhk8hka20" title="Infrastructure as Code Explained" >}}
+
+----
 
 
 ### Learn More

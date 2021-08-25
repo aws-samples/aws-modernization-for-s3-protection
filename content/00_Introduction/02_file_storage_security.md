@@ -10,6 +10,8 @@ File Storage Security is part of the Trend Micro Cloud One™ security service p
 
 File Storage Security is backed by Trend Micro Research, which continuously monitors and collects threat data from across the globe by employing advanced detection analytics to immediately block attacks before they can harm your organization.
 
+----
+
 ### Understanding How Trend Micro Can Help Secure Your Object Storage
 
 There are two main ways to use File Storage Security in your AWS Infrastructure:
@@ -21,8 +23,9 @@ There are two main ways to use File Storage Security in your AWS Infrastructure:
 - <b>S3 bucket Full Scan or Scheduled Scan</b> -> Helps security teams to scan all the objects inside AWS S3 buckets against malicious contents.
 [GitHub link for Plugin](https://github.com/trendmicro/cloudone-filestorage-plugins/tree/master/scan-triggers/aws-python-bucket-full-and-scheduled-scan)
 
-### Architecture
+----
 
+### Architecture
 
 Cloud-native application architectures incorporate cloud file/object storage services into their workflow, creating a new attack vector where they are vulnerable to malicious files. File Storage Security protects the workflow through innovative techniques, such as malware scanning, integration into your custom workflows, and broad cloud storage platform support – freeing you to go further and do more. File Storage Security provides flexible implementation options, including a
 multi-bucket promotional model (scanning bucket to quarantine/clean bucket)
