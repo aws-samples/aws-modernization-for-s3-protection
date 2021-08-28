@@ -100,7 +100,7 @@ You can validate the Cloud Formation Template by clicking in ```Review Stack```,
 
 ---
 
-**7.** In the CloudFormation page the <b>only required parameter</b> here is the <b>name of bucket</b> that you choose to be scanned. In our case please use the name from the S3 bucket that you have created early in this workshop or use one existing S3 bucket that you prefer.
+**7.** In the CloudFormation page the <b>only required parameter</b> here is the <b>name of bucket</b> that you choose to be scanned, just add it in the configuration **(S3BucketToScan)**. In our case please use the name from the S3 bucket that you have created early in this workshop or use one existing S3 bucket that you prefer.
 
 It also supports differents parameters to customize your installation, like Resource prefixes and optional KMS integration, for more details about these configurations check our <a href="https://cloudone.trendmicro.com/docs/file-storage-security/gs-deploy-all-in-one-stack/">Documentation</a>.
 
