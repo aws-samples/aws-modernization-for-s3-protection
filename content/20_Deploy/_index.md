@@ -32,8 +32,10 @@ The bucket name must:
 
 After you create the bucket, you can't change its name. For information about naming buckets, see Bucket naming rules.
 
-{{% notice tip %}}
-Remember that S3 bucket is an unique global name. You can create your own bucket name for this lab.
+{{% notice warning %}}
+<p style='text-align: left;'>
+Remember that S3 bucket are an unique name globally for all AWS customers. If you try to use the same name from this workshop you will have some issues with an existing S3 bucket name already created.
+</p>
 {{% /notice %}}
 
 ![Diagram](/images/create_s3_3.png)
@@ -100,7 +102,7 @@ You can validate the Cloud Formation Template by clicking in ```Review Stack```,
 
 ---
 
-**7.** In the CloudFormation page the <b>only required parameter</b> here is the <b>name of bucket</b> that you choose to be scanned. In our case please use the name from the S3 bucket that you have created early in this workshop or use one existing S3 bucket that you prefer.
+**7.** In the CloudFormation page the <b>only required parameter</b> here is the <b>name of bucket</b> that you choose to be scanned, just add it in the configuration **(S3BucketToScan)**. In our case please use the name from the S3 bucket that you have created early in this workshop or use one existing S3 bucket that you prefer.
 
 It also supports differents parameters to customize your installation, like Resource prefixes and optional KMS integration, for more details about these configurations check our <a href="https://cloudone.trendmicro.com/docs/file-storage-security/gs-deploy-all-in-one-stack/">Documentation</a>.
 
