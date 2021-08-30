@@ -32,8 +32,10 @@ The bucket name must:
 
 After you create the bucket, you can't change its name. For information about naming buckets, see Bucket naming rules.
 
-{{% notice tip %}}
-Remember that S3 bucket is an unique global name. You can create your own bucket name for this lab.
+{{% notice warning %}}
+<p style='text-align: left;'>
+Remember that S3 bucket are an unique name globally for all AWS customers. If you try to use the same name from this workshop you will have some issues with an existing S3 bucket name already created.
+</p>
 {{% /notice %}}
 
 ![Diagram](/images/create_s3_3.png)

@@ -1,7 +1,7 @@
 ---
 title: "Slack Integration"
 chapter: false
-weight: 32
+weight: 33
 ---
 
 {{% notice note %}}
