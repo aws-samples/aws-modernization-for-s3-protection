@@ -38,7 +38,7 @@ Remember that S3 bucket are an unique name globally for all AWS customers. If yo
 
 In this case, let's use the Serverless Application Repository
 
-1. Visit [the app's page on the AWS Lambda Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:415485722356:applications/cloudone-filestorage-plugin-action-promote-or-quarantine).
+1. Visit [the app's page on the AWS Lambda Console](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:415485722356:applications/cloudone-filestorage-plugin-action-promote-or-quarantine).
 2. Fill in the parameters:
     * ScanResultTopic
     * ScanningBucketName
@@ -49,6 +49,14 @@ In this case, let's use the Serverless Application Repository
 4. Click `Deploy`.
 
 ![Diagram](/images/scan_action_1.png)
+
+![Diagram](/images/scan_action_3.png)
+
+----
+
+**5.** After couple minutes you can click on the tab Deployments and expand the deployment to see if the status shows as complete. Then you can move to the next step to test it.
+
+![Diagram](/images/scan_action_4.png)
 
 ---
 
