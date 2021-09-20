@@ -85,6 +85,12 @@ aws iam attach-role-policy --role-name FSS_Lambda_Slack_Notification_Role --poli
 **1.** Download the Lambda function [handler.py file from GitHub](https://github.com/trendmicro/cloudone-filestorage-plugins/blob/master/post-scan-actions/aws-python-slack-notification/handler.py).
 
 
+**Example for CLI downlaod and move to the right folder:**
+```
+git clone https://github.com/trendmicro/cloudone-filestorage-plugins.git
+cd cloudone-filestorage-plugins/post-scan-actions/aws-python-slack-notification/
+```
+
 **2.** In a shell program, create a deployment package:
 
 ```
@@ -112,6 +118,7 @@ aws lambda create-function --function-name <YOUR_FSS_SCAN_SEND_SLACK_NOTIFICATIO
 
 - where:
     - `<YOUR_FSS_SCAN_SEND_SLACK_NOTIFICATION>` is replaced with the name you want to give your Lambda function. Example: `FSS_Scan_Send_Slack_Notification`.
+
     - `<YOUR_FSS_LAMBDA_SLACK_NOTIFICATION_ROLE>` is replaced with the ARN of the role you previously created for the Lambda function. You can find the ARN in the AWS console under **Services > IAM > Roles** > your role > **Role ARN** field (at the top). Example: `arn:aws:iam::000000000000:role/FSS_Lambda_Slack_Notification_Role`.
     - `<YOUR_ZIP_NAME>` is replaced with the name of the ZIP file you created earlier. Example: `scan-send-slack-notification`
     - `<YOUR_REGION>` is replaced by the region where the scanning bucket resides
@@ -190,7 +197,10 @@ aws sns subscribe --topic-arn <SNS_TOPIC_ARN> --protocol lambda --notification-e
 
 - Lastly, grant the SNS service permission to invoke your function.
 
-    `aws lambda add-permission --function-name <FUNCTION_NAME> --region <YOUR_REGION> --statement-id sns --action lambda:InvokeFunction --principal sns.amazonaws.com --source-arn <SNS_TOPIC_ARN>`
+```
+aws lambda add-permission --function-name <FUNCTION_NAME> --region <YOUR_REGION> --statement-id sns --action lambda:InvokeFunction --principal sns.amazonaws.com --source-arn <SNS_TOPIC_ARN>
+```
+
 - where:
     - `<FUNCTION_NAME>` is replaced by the name of the Lambda function you created previously. Example: `FSS_Scan_Send_Slack_Notification`
     - `<YOUR_REGION>` is replaced by the region where the scanning bucket resides
