@@ -1,24 +1,44 @@
 ---
 title: "Quarantine Malicious Files"
 chapter: false
-weight: 33
+weight: 32
 ---
 
 ### Prerequisites
 
-1. **Create Amazon S3 buckets**
-    - Create a 'Promote bucket' to receive clean files. Example: `fss-promote`.
-    - Create a 'Quarantine bucket' to receive quarantined files. Example: `fss-quarantine`.
-2. **Find the 'ScanResultTopic' SNS topic ARN**
-    - In the AWS console, go to **Services > CloudFormation** > your all-in-one stack > **Resources** > your storage stack > **Resources**.
-    - Scroll down to locate the  **ScanResultTopic** Logical ID.
-    - Copy the **ScanResultTopic** ARN to a temporary location. It will look like this: `arn:aws:sns:us-east-1:123445678901:FileStorageSecurity-All-In-One-Stack-StorageStack-1IDPU1PZ2W5RN-ScanResultTopic-N8DD2JH1GRKF`
+**1.** **Create Amazon S3 buckets**
 
-### Installation
+- Create a 'Promote bucket' to receive clean files. Example: `fss-promote`.
+- Create a 'Quarantine bucket' to receive quarantined files. Example: `fss-quarantine`.
 
-In this case, let's use the [Serverless Application Repository](https://console.aws.amazon.com/serverlessrepo/home):
+{{% notice warning %}}
+<p style='text-align: left;'>
+Remember that S3 bucket are an unique name globally for all AWS customers. If you try to use the same name from this workshop you will have some issues with an existing S3 bucket name already created.
+</p>
+{{% /notice %}}
 
-1. Visit [the app's page on the AWS Lambda Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:415485722356:applications/cloudone-filestorage-plugin-action-promote-or-quarantine).
+{{% notice note %}}
+<p style='text-align: left;'>
+<strong>📌 If you need help on how to create an Amazon S3 bucket here is the step-by-steps:</strong> <a href="/20_deploy.html#s3-bucket-creation">Link</a>
+</p>
+{{% /notice %}}
+
+
+**2.** **Find the 'ScanResultTopic' SNS topic ARN**
+
+- In the AWS console, go to **Services > CloudFormation** > your all-in-one stack > **Resources** > your storage stack > **Resources**.
+- Scroll down to locate the  **ScanResultTopic** Logical ID.
+- Copy the **ScanResultTopic** ARN to a temporary location. It will look like this: `arn:aws:sns:us-east-1:123445678901:FileStorageSecurity-All-In-One-Stack-StorageStack-1IDPU1PZ2W5RN-ScanResultTopic-N8DD2JH1GRKF`
+
+![Diagram](/images/slack_2.png)
+
+---
+
+### Deploying Post Scan Action (Functions) - Promote and Quarantine
+
+In this case, let's use the Serverless Application Repository
+
+1. Visit [the app's page on the AWS Lambda Console](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:415485722356:applications/cloudone-filestorage-plugin-action-promote-or-quarantine).
 2. Fill in the parameters:
     * ScanResultTopic
     * ScanningBucketName
@@ -28,9 +48,17 @@ In this case, let's use the [Serverless Application Repository](https://console.
 3. Check the `I acknowledge that this app creates custom IAM roles.` checkbox.
 4. Click `Deploy`.
 
-### Other Options
+![Diagram](/images/scan_action_1.png)
 
-Check out [other installation methods](./other-installation-methods.md), such as AWS CLI or SAM CLI.
+![Diagram](/images/scan_action_3.png)
+
+----
+
+**5.** After couple minutes you can click on the tab Deployments and expand the deployment to see if the status shows as complete. Then you can move to the next step to test it.
+
+![Diagram](/images/scan_action_4.png)
+
+---
 
 ### Test the Application
 
@@ -61,6 +89,13 @@ To test that the application was deployed properly, you'll need to generate a ma
 
         > **NOTE:** It can take about 15-30 seconds or more for the file to move.
 
-        You did it! :tada: 
+![Diagram](/images/scan_action_2.png)
+
+Using the AWS CLI or the AWS Console, you should be able to see the eicar file in your ```QuarantineBucketName``` with the correct tags.
+
+---
+
+<b>Awesome, You did it! :tada: </b>
         
-        Using the AWS CLI or the AWS Console, you should be able to see the eicar file in your ```QuarantineBucketName``` with the correct tags.
+
+

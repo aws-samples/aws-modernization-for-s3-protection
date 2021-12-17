@@ -10,11 +10,9 @@ pre: "<b>1. </b>"
 
 Back in March/2006, when Amazon Simple Storage Service (Amazon S3) was launched and created the first generally available AWS service, over the time, data storage and usage has exploded, and the world has never been the same. Amazon S3 has virtually unlimited scalability, and unmatched availability, durability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements.
 
-<video width="800" height="600" autoplay muted>
-<source src="/images/s3.mp4" type="video/mp4">
-</video>
+{{< youtube id="77lMCiiMilo" title="S3 Buckets" >}}
 
-<p><b>Source:</b> <a href="https://www.youtube.com/watch?v=77lMCiiMilo" target="_blank">https://www.youtube.com/watch?v=77lMCiiMilo</a></p>
+----
 
 ### Increasing Cloud-Native Storage Adoption
 
