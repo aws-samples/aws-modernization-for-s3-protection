@@ -36,13 +36,28 @@ Our threat researchers and data scientists use the latest techniques to analyze 
 - Familiarize users with the deployment, configuration, and usage of Cloud One - File Storage Security to easily deploy in AWS environments
 - Identify what data flow profiles require automated antimalware scanning as part of the data processing pipelines
 
----
+--------
 
-### Expected Duration:
- 
-- 1 Hour
+## Workshop Agenda 
 
----
+The workshop is divided into the sections listed below. Plan around two hours to complete the full workshop.
+
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 1. Introduction - (10 minutes)</b> 
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 2. Requirements (10 minutes)</b>  
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 5. Deploy Cloud One File Storage Security (20 minutes)</b>
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 4. Automation and Notification (25 minutes)</b>
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 7. Cleanup (10 minutes)</b>
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 8. Conclusion (5 minutes)</b>
+
+<span style="color: #4e3eb1;"><i class='fas fa-check fa-xs'></i></span> <b> 9. Survey (5 minutes)</b>
+
+--------
 
 ### Who should attend
 - Site Reliability Engineers (SREs)
@@ -61,9 +76,10 @@ For any additional help please reach out to:
 
 - Fernando Cardoso - (fernando_cardoso@trendmicro.com)
 - Felipe Costa - (felipe_costa@trendmicro.com)
+- Justin Perkins - (justin_perkins@trendmicro.com)
 
 <p>
-<a  href="mailto:fernando_cardoso@trendmicro.com;felipe_costa@trendmicro.com?subject=Feedback AWS S3 bucket malware scanning with Trend Micro Workshop"  target="_blank" rel="noopener noreferrer"  class="btn btn-default">  
+<a  href="mailto:fernando_cardoso@trendmicro.com;felipe_costa@trendmicro.com;justin_perkins@trendmicro.com?subject=Feedback AWS S3 bucket malware scanning with Trend Micro Workshop"  target="_blank" rel="noopener noreferrer"  class="btn btn-default">  
   Talk to us
   <i class="fas fa-paper-plane"></i>
 </a>

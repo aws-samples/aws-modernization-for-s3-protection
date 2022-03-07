@@ -1,13 +1,13 @@
 ---
-title: "Automation and Monitoring"
+title: "Automation and Notifications"
 chapter: true
 weight: 30
 pre: "<b>4. </b>"
 ---
 
-# Automation and Monitoring
+# Automation and Notification
 
-### Automate Actions and Monitoring your Scans
+### Automate deployment and scan notification.
 
 After Cloud One - File Storage Security completes a scan, the scan results are tagged to the file and published to Amazon SNS topic ```ScanResultTopic```.
 

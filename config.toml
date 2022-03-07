@@ -15,7 +15,7 @@ enableEmoji = "true"
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "Felipe Costa and Fernando Cardoso from Trend Micro"
+  author = "Felipe Costa, Fernando Cardoso, and Justin Perkins from Trend Micro"
   # Description of the site, will be used in meta information
   description = "Data Security with Trend Micro"
   # Shows a checkmark for visited pages on the menu

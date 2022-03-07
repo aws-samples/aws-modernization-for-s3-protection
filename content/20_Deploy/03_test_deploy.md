@@ -14,41 +14,34 @@ This video here also demostrate the steps-by-steps if you prefer to check additi
 
 ---
 
-**1.** Obtain the EICAR (European Institute for Computer Antivirus Research) file, this is a test file developed for a simple test of anti-malware engine:
+**1.** In the AWS console, open **AWS CloudShell** in a new tab.
 
-- Temporarily disable your virus scanner, otherwise it will catch the eicar file and delete it. Go to the <b>[EICAR](https://www.eicar.org/)</b> file page and download **eicar_com.zip** or any of the other versions of this file.
+- To download the eicar test file, in CloudShell run this command: <code>wget https://secure.eicar.org/eicar.com.txt</code> 
+
+![cloudshell](/images/wget.png)
+
+- Upload the eicar file to the S3 bucket created previosuly: <code>aws s3 cp eicar.com.txt s3://**name-of-bucket-goes-here**/eicar.txt</code>
+
+![cloudshell](/images/eicar.png)
+
 
 ---
 
-**2.** Upload the eicar file to your Amazon S3 bucket that we define before to be scanning by Cloud One - File Storage Security.
-
-**2.1** Go to AWS console
-
-**2.2** After go to Services > S3 and find your S3 bucket that you defined to be scanned by File Storage Security
+**2.** After successful upload navigate to **S3** and find your S3 bucket that you defined to be scanned by File Storage Security.
 
 ![Diagram](/images/s3_1.png)
 
 ---
 
-**2.3** click <b>Upload</b> and upload the file that you downloaded. Cloud One - File Storage Security will scan the file, detects as a malware, and will add tags information about it in the object.
-![Diagram](/images/s3_2.png)
+**2.4** Select the uploaded eicar file.
+
+![cloudshell](/images/eicar-upload.png)
 
 ---
 
-**2.4** Click Add files, select the eicar and click **Upload**.
+**3.** Examine the tags applied from the scan results. 
 
-![Diagram](/images/s3_3.png)
-
-Or you could upload the file using the AWS CLI using the example:
-
-``` bash
-aws s3 sync eicar.txt s3://my-bucket/path
-```
-To know more on how to use the AWS CLI, check the <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">Installation</a> and <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html">Configuration</a> documentation.
-
----
-
-**3.** Now that you have the object uploaded to Amazon S3 you can examine the tags from the scan results. In your Amazon S3 bucket, click in the file that you uploaded, then scroll to the <b>Tags</b> section, you will see the details like the example below:
+- Scroll to the <b>Tags</b> section, you will see the details like the example below:
 
 
 ![Diagram](/images/tags_updated.png)
@@ -71,11 +64,5 @@ You could do the same process with a safe file and see how Cloud One - File Stor
 </p>
 {{% /notice %}}
 
-
-{{% notice warning %}}
-<p style='text-align: left;'>
-Remember to re-enable your anti-malware solution in your laptop after the test is complete.
-</p>
-{{% /notice %}}
 
 
