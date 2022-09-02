@@ -70,9 +70,11 @@ url = "https://cloudone.trendmicro.com/SignUp.screen"
 weight = 22
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackFriday]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
     hrefTargetBlank = true
+        [markup.goldmark.renderer]
+          unsafe = true
 
 [Languages]
 [Languages.oyo]
