@@ -53,10 +53,10 @@ In order to launch both stacks, you must leverage the following CloudFormation T
 
 ---
 
-### File Scanning Informatiuon
+### File Scanning Information
 
-The file hashe is sent to Trend Micro Global Smart Scan Server when a file scan occurs and enables File Storage Security to identifies malicious file hashes.
+The file hash is sent to Trend Micro Global Smart Scan Server when a file scan occurs and enables File Storage Security to identify malicious file hashes.
 
-In the smart scan solution, clients send file hashes determined by Trend Micro technology to Smart Scan Servers. **Cloud One - File Storage Security never send the entire file** and the risk of the file is determined using the file hashes.
+In the smart scan solution, clients send file hashes determined by Trend Micro technology to Smart Scan Servers. **Cloud One - File Storage Security never sends the entire file** and the risk of the file is determined using the file hashes.
 
 [Trend Micro Cloud One™ - File Storage Security Data Collection Notice](https://success.trendmicro.com/solution/000258113)
