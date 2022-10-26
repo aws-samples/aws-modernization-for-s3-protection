@@ -65,6 +65,8 @@ In this case, let's use the Serverless Application Repository
 To test that the application was deployed properly, you'll need to generate a malware detection using the [eicar test file](https://secure.eicar.org/eicar.com "A file used for testing anti-malware scanners."), and then check the Quarantine bucket to make sure the `eicar` file was sent there successfully.
 
 1. **Download the Eicar test file**
+   - **NOTE**: We recommend using the AWS CloudShell process in the previous "Testing your deployment" section as most users cannot disable their 
+               virus scanner.       
    - Temporarily disable your virus scanner or create an exception, otherwise it will catch the `eicar` file and delete it.
    - Browser: Go to the [eicar file](https://secure.eicar.org/eicar.com) page and download `eicar_com.zip` or any of the other versions of this file.
    - CLI: `curl -O https://secure.eicar.org/eicar_com.zip`
